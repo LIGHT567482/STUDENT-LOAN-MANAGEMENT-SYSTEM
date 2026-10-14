@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run KIU LMS locally",
+			"type": "shell",
+			"command": "java",
+			"args": [
+				"--enable-native-access=javafx.graphics",
+				"--enable-native-access=ALL-UNNAMED",
+				"--module-path",
+				"target/jpackage-input/javafx-base-25.0.4.jar:target/jpackage-input/javafx-base-25.0.4-linux.jar:target/jpackage-input/javafx-graphics-25.0.4.jar:target/jpackage-input/javafx-graphics-25.0.4-linux.jar:target/jpackage-input/javafx-controls-25.0.4.jar:target/jpackage-input/javafx-controls-25.0.4-linux.jar",
+				"--add-modules",
+				"javafx.controls",
+				"-cp",
+				"/tmp/kiu-lms-verify:src/main/resources:target/jpackage-input/commons-logging-1.4.0.jar:target/jpackage-input/fontbox-3.0.8.jar:target/jpackage-input/pdfbox-3.0.8.jar:target/jpackage-input/pdfbox-io-3.0.8.jar:target/jpackage-input/sqlite-jdbc-3.49.1.0.jar",
+				"org.kiu.lms.LmsApp"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

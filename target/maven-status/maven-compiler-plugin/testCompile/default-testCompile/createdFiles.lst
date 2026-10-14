@@ -1,0 +1,6 @@
+org/kiu/lms/LmsServiceTest$Evidence.class
+org/kiu/lms/BackupServiceTest.class
+org/kiu/lms/CsvExporterTest.class
+org/kiu/lms/PdfExporterTest.class
+org/kiu/lms/MoneyTest.class
+org/kiu/lms/LmsServiceTest.class
